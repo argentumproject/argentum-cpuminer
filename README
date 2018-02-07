@@ -1,10 +1,10 @@
-This is a multi-threaded CPU miner for Litecoin and Bitcoin,
-fork of Jeff Garzik's reference cpuminer.
+This is a multi-threaded CPU miner customized for Argentum (Argon2d and Yescrypt)
+fork of Jeff Garzik's reference cpuminer. (also thanks to github.com/unitusdev for Argon2d and Yescrypt support)
 
 License: GPLv2.  See COPYING for details.
 
-Downloads:  https://sourceforge.net/projects/cpuminer/files/
-Git tree:   https://github.com/pooler/cpuminer
+Downloads:  https://https://github.com/argentumproject/argentum-cpuminer/releases
+Git tree:   https://https://github.com/argentumproject/argentum-cpuminer
 
 Dependencies:
 	libcurl			http://curl.haxx.se/libcurl/
@@ -20,8 +20,8 @@ Basic *nix build instructions:
 Ubuntu Instructions:
 	sudo apt-get update && sudo apt-get install -y git make automake autoconf pkg-config autotools-dev build-essential libboost-all-dev libjansson-dev libssl-dev
 	cd ~/
-	git clone https://github.com/unitusdev/unitus-cpuminer.git
-	cd unitus-cpuminer
+	git clone https://github.com/argentumproject/argentum-cpuminer.git
+	cd argentum-cpuminer
 	./autogen.sh
 	CFLAGS="-O3 -faggressive-loop-optimizations -falign-loops -mtune=native -march=native" ./configure
 	make
